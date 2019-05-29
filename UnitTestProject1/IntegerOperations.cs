@@ -22,6 +22,7 @@ namespace Section5
         {
             int sum = number1 + number2;
             Console.WriteLine(sum);
+            Assert.AreEqual(sum, 15);
         }
         [TestMethod]
         public void Test_Subtraction()
