@@ -6,6 +6,9 @@ namespace Section5
     [TestClass]
     public class IntegerOperations
     {
+        static int number1;
+        static int number2;
+
         [TestMethod]
         public void Test_Addition()
         {
