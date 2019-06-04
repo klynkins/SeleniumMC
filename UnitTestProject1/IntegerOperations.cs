@@ -20,6 +20,7 @@ namespace Section5
         [TestMethod]
         public void Test_Addition()
         {
+            int sum = number1 + number2;
         }
         [TestMethod]
         public void Test_Subtraction()
