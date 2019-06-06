@@ -22,5 +22,9 @@ namespace Section5
         public void Test_Division()
         {
         }
+        [TestMethod]
+        public void Test_Modulus()
+        {
+        }
     }
 }
