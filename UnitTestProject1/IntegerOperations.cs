@@ -14,5 +14,9 @@ namespace Section5
         public void Test_Subtraction()
         {
         }
+        [TestMethod]
+        public void Test_Multiplication()
+        {
+        }
     }
 }
