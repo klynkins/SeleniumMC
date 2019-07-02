@@ -13,6 +13,7 @@ namespace UnitTestProject
     {
         private int a;
         public TestContext Test3Context { get; set; }
+        private static TestContext _testContext;
         [TestInitialize]
         public void RunBeforeEveryTest()
         {
