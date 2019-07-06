@@ -18,12 +18,12 @@ namespace UnitTestProject
             a = 1;
         }
         [TestCleanup]
-        public void RunAfterEveryTest()
+        public void RunAfterEveryTestMethod()
         {
             Trace.Write("RunAfterEveryTestMethod will execute after every single test method in a class");
         }
         [ClassInitialize]
-        public static void RunBeforeAllOfTheTestMethodsStartd(TestContext testContext)
+        public static void RunBeforeAllOfTheTestMethodsStarted(TestContext testContext)
         {
             _testContext = testContext;
             Trace.Write("I will run one time before all the tests in the class started")
@@ -42,6 +42,7 @@ namespace UnitTestProject
         [TestMethod]
         public void TestMethod2()
         {
+            Trace.Write(TestContext.TestName);
             Assert.IsTrue(a == 1);
         }
         [TestMethod]
