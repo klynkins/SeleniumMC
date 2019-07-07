@@ -28,6 +28,11 @@ namespace UnitTestProject
             _testContext = testContext;
             Trace.Write("I will run one time before all the tests in the class started")
         }
+        [ClassCleanup]
+        public static void RunAfterEveryTestClass()
+        {
+            Trace.Write("I will run one time after all in tests in the class finished");
+        }
         [TestMethod]
         public void TestMethod1()
         {
