@@ -22,6 +22,12 @@ namespace UnitTestProject
         {
             Trace.Write("RunAfterEveryTestMethod will execute after every single test method in a class");
         }
+        [ClassInitialize]
+        public static void RunBeforeAllOfTheTestMethodsStartd(TestContext testContext)
+        {
+            _testContext = testContext;
+            Trace.Write("I will run one time before all the tests in the class started")
+        }
         [TestMethod]
         public void TestMethod1()
         {
