@@ -2,6 +2,7 @@
 using System.Text;
 using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Diagnostics;
 
 /* Initialize Test */
 namespace UnitTestProject
@@ -15,6 +16,11 @@ namespace UnitTestProject
         public void RunBeforeEveryTest()
         {
             a = 1;
+        }
+        [TestCleanup]
+        public void RunAfterEveryTest()
+        {
+            Trace.Write("RunAfterEveryTestMethod will execute after every single test method in a class");
         }
         [TestMethod]
         public void TestMethod1()
