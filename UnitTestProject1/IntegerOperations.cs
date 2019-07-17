@@ -27,6 +27,8 @@ namespace Section5
         [TestMethod]
         public void Test_Subtraction()
         {
+            int difference = number1 - number2;
+            Assert.AreEqual(difference, 5);
         }
         [TestMethod]
         public void Test_Multiplication()
