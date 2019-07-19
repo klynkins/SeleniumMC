@@ -33,6 +33,8 @@ namespace Section5
         [TestMethod]
         public void Test_Multiplication()
         {
+            int multi = number1 * number2;
+            Assert.AreEqual(multi, 5);
         }
         [TestMethod]
         public void Test_Division()
