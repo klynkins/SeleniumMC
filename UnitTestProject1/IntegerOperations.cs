@@ -20,7 +20,7 @@ namespace Section5
         [TestMethod]
         public void Test_Addition()
         {
-            int sum = number1 + number2;
+            int sum = number1 - number2;
             Console.WriteLine(sum);
             Assert.AreEqual(sum, 15);
         }
