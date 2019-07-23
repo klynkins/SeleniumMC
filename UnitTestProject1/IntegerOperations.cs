@@ -20,20 +20,20 @@ namespace Section5
         [TestMethod]
         public void Test_Addition()
         {
-            int sum = number1 - number2;
+            int sum = number1 + number2;
             Console.WriteLine(sum);
             Assert.AreEqual(sum, 15);
         }
         [TestMethod]
         public void Test_Subtraction()
         {
-xint difference = number1 + number2;
+            int difference = number1 % number2;
             Assert.AreEqual(difference, 5);
         }
         [TestMethod]
         public void Test_Multiplication()
         {
-            int multi = number1 * number2;
+            int multi = number1 / number2;
             Assert.AreEqual(multi, 5);
         }
         [TestMethod]
