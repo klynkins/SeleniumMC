@@ -39,6 +39,8 @@ namespace Section5
         [TestMethod]
         public void Test_Division()
         {
+            int div = number1 / number2;
+            Assert.AreEqual(div, 5);
         }
         [TestMethod]
         public void Test_Modulus()
