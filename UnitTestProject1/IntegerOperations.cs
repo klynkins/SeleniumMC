@@ -34,19 +34,19 @@ namespace Section5
         public void Test_Multiplication()
         {
             int multi = number1 * number2;
-            Assert.AreEqual(multi, 5);
+            Assert.AreEqual(multi, 50);
         }
         [TestMethod]
         public void Test_Division()
         {
-            int div = number2 / number1;
-            Assert.AreEqual(div, 5);
+            int div = number1 / number2;
+            Assert.AreEqual(div, 2);
         }
         [TestMethod]
         public void Test_Modulus()
         {
-            int mod = number2 % number1;
-            Assert.AreEqual(mod, 5);
+            int mod = number1 % number2;
+            Assert.AreEqual(mod, 0);
         }
     }
 }
